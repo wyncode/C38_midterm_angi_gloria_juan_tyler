@@ -1,21 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Breweries from './components/Brewery/Breweries';
-import TopNav from './components/Navbar/navbar';
+import Home from './components/Home/Home';
+import NavBar from './components/Navbar/navbar';
 import './App.css';
 
 const App = () => {
-	return (
-		<>
-			<Breweries />
-
-			{/* <TopNav />
-			<div id="home">
-			<h1 id="welcome">Welcome to the Brewery Finder</h1>
-			<button>Brewery of the Month</button>
-			<button>Find your Brewery</button>
-			</div> */}
-		</>
-	);
+  return (
+    <Router>
+      <NavBar />
+      <Route path="/" exact component={Home} />
+      <Route path="/breweries" component={Breweries} />
+    </Router>
+  );
 };
 
 export default App;
