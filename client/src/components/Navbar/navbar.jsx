@@ -1,59 +1,49 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import "../Navbar/navbar.css"
 
 const TopNav = () => {
   return (
+    <nav className="navigation">
     <Nav
-      className="justify-content-center"
-      style={{ backgroundColor: 'black' }}
       defaultActiveKey="/home"
-      as="ul"
-    >
+      as="ul">
+
       <Nav.Item as="li">
-        <Nav.Link style={{ color: 'yellow' }} href="/">
-          <strong>Imagine a logo here</strong>
+        <Nav.Link href="/">
+          <strong>Logo here</strong>
         </Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link style={{ color: 'yellow' }} href="/breweries">
-          <strong>Brewery Finder</strong>
-        </Nav.Link>
-      </Nav.Item>
-      <Nav.Item as="li">
-        <Nav.Link style={{ color: 'yellow' }} href="/about" eventKey="link-1">
-          About Us
+        <Nav.Link href="/breweries">
+          Brewery Finder
         </Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
         <Nav.Link
-          style={{ color: 'yellow' }}
           href="/recipe/random"
-          eventKey="link-2"
-        >
+          eventKey="link-2">
           Feature Brewery
         </Nav.Link>
       </Nav.Item>
-      <Nav.Item as="li">
+      
+      {/* <Nav.Item as="li">
         <Nav.Link
           style={{ color: 'yellow' }}
           href="/recipe/random"
-          eventKey="link-2"
-        >
+          eventKey="link-2">
           Our Breweries
         </Nav.Link>
-      </Nav.Item>{' '}
+      </Nav.Item> */}
+
       <Nav.Item as="li">
-        <Nav.Link
-          style={{ color: 'yellow' }}
-          href="/recipe/random"
-          eventKey="link-2"
-        >
-          <FontAwesomeIcon icon={faInstagram} />
+        <Nav.Link href="/about" eventKey="link-1">
+          About Us
         </Nav.Link>
       </Nav.Item>
+      
     </Nav>
+    </nav>
   );
 };
 
