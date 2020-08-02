@@ -1,28 +1,43 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AppContextProvider } from './context/AppContext';
 import ContextDemo from './components/ContextDemo';
-
+import Feature from './components/Feature';
 import './App.css';
 
 const App = () => {
-  const [serverMessage, setServerMessage] = useState('');
-
-  const fetchDemoData = () => {
-    fetch('/api/demo')
+  // const fetchData = () => {
+  const [results, setResults] = useState([]);
+  useEffect(() => {
+    fetch('https://api.openbrewerydb.org/breweries/search?query=miami')
       .then((response) => response.json())
-      .then((data) => setServerMessage(data.message));
-  };
+      .then((data) => setResults(data))
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  // };
 
-  useEffect(fetchDemoData, []);
+  // useEffect(fetchDemoData, []);
 
   return (
-    <AppContextProvider>
-      <div id="demo">
-        <h3>Hello from client/src/App.js</h3>
-        <ContextDemo />
-        <h3>{serverMessage}</h3>
+    <>
+      <div>
+        <Feature />
+
+        {results?.map((brewery) => {
+          return (
+            <>
+              <div>{brewery?.name}</div>
+              <div>{brewery?.city}</div>
+              <div>{brewery?.state}</div>
+              <a href={brewery.website_url} target="_blank">
+                Brewery
+              </a>
+            </>
+          );
+        })}
       </div>
-    </AppContextProvider>
+    </>
   );
 };
 
