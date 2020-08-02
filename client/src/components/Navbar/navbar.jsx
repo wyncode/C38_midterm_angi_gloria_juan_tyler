@@ -16,7 +16,7 @@ const TopNav = () => {
       </Nav.Item>
 
       <Nav.Item as="li">
-        <Nav.Link href="/brewery-finder">
+        <Nav.Link href="/breweries">
           Brewery Finder
         </Nav.Link>
       </Nav.Item>
