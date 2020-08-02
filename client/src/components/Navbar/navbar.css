@@ -12,4 +12,13 @@ nav a {
     text-transform: uppercase;
     /* border: 2px solid red; */
     margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+nav a:active {
+    font-weight: bold;
 }

@@ -10,18 +10,20 @@ const TopNav = () => {
       as="ul">
 
       <Nav.Item as="li">
-        <Nav.Link href="/">
-          <strong>Logo here</strong>
+        <Nav.Link href="/home">
+          Home
         </Nav.Link>
       </Nav.Item>
+
       <Nav.Item as="li">
-        <Nav.Link href="/breweries">
+        <Nav.Link href="/brewery-finder">
           Brewery Finder
         </Nav.Link>
       </Nav.Item>
+
       <Nav.Item as="li">
         <Nav.Link
-          href="/recipe/random"
+          href="/feature-brewery"
           eventKey="link-2">
           Feature Brewery
         </Nav.Link>
