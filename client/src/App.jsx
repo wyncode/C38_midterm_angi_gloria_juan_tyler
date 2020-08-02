@@ -33,7 +33,9 @@ const App = () => {
         <h3>{serverMessage}</h3>
       </div>
       <button onClick={handleClick}>Show modal</button>
-      <Modal isOpen={isOpen} closeModal={closeModal} />
+      <Modal isOpen={isOpen} closeModal={closeModal}>
+        <h1>this is the stuff inside the modal</h1>
+      </Modal>
     </AppContextProvider>
   );
 };
