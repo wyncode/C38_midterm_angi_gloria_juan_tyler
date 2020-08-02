@@ -4,13 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "bootstrap": "^4.5.0",
     "concurrently": "^5.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react-bootstrap": "^1.3.0"
   },
   "devDependencies": {
-    "prettier": "^2.0.5",
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.4",
-    "dotenv": "^8.2.0"
+    "prettier": "^2.0.5"
   },
   "scripts": {
     "start": "node server.js",
@@ -19,5 +25,7 @@
     "dev": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\"",
     "heroku-postbuild": "cd client && yarn && yarn run build",
     "prettify": "prettier '*/**/*.js' '*/**/*.jsx' '*/**/*.html' '*/**/*.css' --write"
-  }
+  },
+  "repository": "git@github.com:wyncode/C38_midterm_angi_gloria_juan_tyler.git",
+  "author": "amgarz0n <angigarzon@gmail.com>"
 }
