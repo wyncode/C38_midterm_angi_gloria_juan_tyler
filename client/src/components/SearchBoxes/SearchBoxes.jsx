@@ -2,5 +2,24 @@ import React from 'react';
 import './SearchBoxes.css';
 
 export const SearchBox = (props) => (
-	<input className="search" type="search" placeholder="search by name" onChange={props.onSearchChange} />
+  <>
+    <form onSubmit={props.fetchByName}>
+      <input
+        className="search"
+        type="search"
+        placeholder="search by name"
+        onChange={props.handleNameChange}
+      />
+      <input type="submit" value="search by name" />
+    </form>
+    <form onSubmit={props.fetchByCity}>
+      <input
+        className="search"
+        type="search"
+        placeholder="search by city"
+        onChange={props.handleCityChange}
+      />
+      <input type="submit" value="search by city" />
+    </form>
+  </>
 );
