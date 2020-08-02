@@ -4,6 +4,7 @@ import Breweries from './components/Brewery/Breweries';
 import Home from './components/Home/Home';
 import NavBar from './components/Navbar/navbar';
 import './App.css';
+import Footer from './components/Footer/Footer.jsx';
 
 const App = () => {
   return (
@@ -11,7 +12,9 @@ const App = () => {
       <NavBar />
       <Route path="/" exact component={Home} />
       <Route path="/breweries" component={Breweries} />
+      <Footer />
     </Router>
+    
   );
 };
 
