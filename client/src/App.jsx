@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { AppContextProvider } from './context/AppContext';
 import ContextDemo from './components/ContextDemo';
+import Modal from './components/Modal';
 
 import './App.css';
 
 const App = () => {
   const [serverMessage, setServerMessage] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
 
   const fetchDemoData = () => {
     fetch('/api/demo')
@@ -15,6 +17,14 @@ const App = () => {
 
   useEffect(fetchDemoData, []);
 
+  const handleClick = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <AppContextProvider>
       <div id="demo">
@@ -22,6 +32,8 @@ const App = () => {
         <ContextDemo />
         <h3>{serverMessage}</h3>
       </div>
+      <button onClick={handleClick}>Show modal</button>
+      <Modal isOpen={isOpen} closeModal={closeModal} />
     </AppContextProvider>
   );
 };
