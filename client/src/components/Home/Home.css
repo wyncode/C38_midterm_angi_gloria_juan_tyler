@@ -26,6 +26,7 @@ body {
       text-transform: uppercase;
       font-size: 2rem;
       padding: 1rem 0;
+      color: gold;
   }
 
   .button-placeholder {
@@ -34,7 +35,7 @@ body {
       color: black;
       border: 2px solid black;
       width: fit-content;
-      text-transform: uppercase;
+      border-radius: .25rem;
   }
 
   .about-us-button {
