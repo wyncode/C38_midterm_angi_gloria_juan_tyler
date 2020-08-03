@@ -6,39 +6,41 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import { useParams } from 'react-router-dom';
 
 const mapStyles = {
-	width: '100%',
-	height: '100%'
+  width: '100%',
+  height: '100%'
 };
 
 const Maps = (props) => {
-	const [ pub, setPub ] = useState({
-		latitude: 40.809,
-		longitude: -99.344355
-	});
-	const { id } = useParams();
-	useEffect(() => {
-		fetch(`https://api.openbrewerydb.org/breweries/${id}`).then((response) => response.json()).then((data) => {
-			setPub(data);
-			console.log(data);
-		});
-	}, []);
-	console.log(pub.latitude, pub.longitude);
-	return (
-		<div>
-			<Map
-				google={props.google}
-				zoom={10}
-				style={mapStyles}
-				initialCenter={{ lat: 34.34343434, lng: -88.3244234 }}
-			>
-				<Marker position={{ lat: 34.34343434, lng: -88.3244234 }} />
-			</Map>
-		</div>
-	);
+  const [pub, setPub] = useState({
+    latitude: 0,
+    longitude: 0
+  });
+  const { id } = useParams();
+  useEffect(() => {
+    fetch(`https://api.openbrewerydb.org/breweries/${id}`)
+      .then((response) => response.json())
+      .then((data) => {
+        setPub(data);
+        console.log(data);
+      });
+  }, []);
+  console.log(pub.latitude, pub.longitude);
+  return (
+    <div>
+      <Map
+        google={props.google}
+        zoom={15}
+        style={mapStyles}
+        center={{ lat: pub?.latitude, lng: pub?.longitude }}
+      >
+        <Marker position={{ lat: pub?.latitude, lng: pub?.longitude }} />
+      </Map>
+    </div>
+  );
 };
 
 export default GoogleApiWrapper({
-	apiKey: 'AIzaSyDLZzFeYmkubzhapzVlvm-og7lAAA4WdQs'
+  apiKey: 'AIzaSyDLZzFeYmkubzhapzVlvm-og7lAAA4WdQs'
 })(Maps);
 
 // const LocationPin = ({ text }) => (
