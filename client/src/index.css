@@ -2,3 +2,50 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.modal-overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgba(38, 50, 56, 0.8);
+  animation: fadeIn 0.4s;
+}
+
+.modal-wrapper {
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(55, 71, 79, 0.3);
+  border-radius: 4px;
+  z-index: 1000;
+  padding: 25px;
+  width: 488px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  animation: fadeIn 0.5s ease, slideIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-25%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
