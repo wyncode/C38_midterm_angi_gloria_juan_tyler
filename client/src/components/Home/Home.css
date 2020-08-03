@@ -22,6 +22,11 @@ body {
       background-position: center;
   }
 
+  .logo-icon {
+    width: 3rem;
+    height: auto;
+  }
+
   h1 {
       text-transform: uppercase;
       font-size: 2rem;
