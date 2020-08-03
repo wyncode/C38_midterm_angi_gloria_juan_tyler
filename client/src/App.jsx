@@ -1,18 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Breweries from './components/Brewery/Breweries';
 import Home from './components/Home/Home';
-import NavBar from './components/Navbar/navbar';
+import NavBar from './components/Navbar/Navbar';
+import Maps from './components/Maps/Maps';
 import './App.css';
 
 const App = () => {
-  return (
-    <Router>
-      <NavBar />
-      <Route path="/" exact component={Home} />
-      <Route path="/breweries" component={Breweries} />
-    </Router>
-  );
+	const [ brewery, setBrewery ] = useState([]);
+	const [ city, setCity ] = useState('');
+	const [ name, setName ] = useState('');
+	return (
+		<Router>
+			<NavBar />
+			<Route path="/" exact component={Home} />
+			<Route
+				exact
+				path="/breweries"
+				render={(props) => {
+					return (
+						<Breweries
+							{...props}
+							brewery={brewery}
+							city={city}
+							name={name}
+							setBrewery={setBrewery}
+							setCity={setCity}
+							setName={setName}
+						/>
+					);
+				}}
+			/>
+			<Route
+				exact
+				path="/maps"
+				render={(props) => {
+					return <Maps {...props} brewery={brewery} />;
+				}}
+			/>
+		</Router>
+	);
 };
 
 export default App;
