@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
-// import './App.css';
+import '../Feature/Feature.css';
 
 const Feature = () => {
   // const [ , ] = useState()
