@@ -4,6 +4,8 @@ import ContextDemo from './components/ContextDemo';
 import Modal from './components/Modal';
 
 import './App.css';
+import Footer from './components/Footer/Footer.jsx';
+import About from './components/About/About';
 
 const App = () => {
   const [serverMessage, setServerMessage] = useState('');
