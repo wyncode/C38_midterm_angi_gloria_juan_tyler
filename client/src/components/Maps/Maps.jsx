@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import { useParams } from 'react-router-dom';
 
 const mapStyles = {
 	width: '100%',
@@ -10,16 +11,27 @@ const mapStyles = {
 };
 
 const Maps = (props) => {
-	console.log(props);
+	const [ pub, setPub ] = useState({
+		latitude: 40.809,
+		longitude: -99.344355
+	});
+	const { id } = useParams();
+	useEffect(() => {
+		fetch(`https://api.openbrewerydb.org/breweries/${id}`).then((response) => response.json()).then((data) => {
+			setPub(data);
+			console.log(data);
+		});
+	}, []);
+	console.log(pub.latitude, pub.longitude);
 	return (
 		<div>
 			<Map
 				google={props.google}
-				zoom={15}
+				zoom={10}
 				style={mapStyles}
-				initialCenter={{ lat: props.brewery.latitude, lng: props.brewery.longitude }}
+				initialCenter={{ lat: 34.34343434, lng: -88.3244234 }}
 			>
-				<Marker position={{ lat: props.brewery.latitude, lng: props.brewery.longitude }} />
+				<Marker position={{ lat: 34.34343434, lng: -88.3244234 }} />
 			</Map>
 		</div>
 	);

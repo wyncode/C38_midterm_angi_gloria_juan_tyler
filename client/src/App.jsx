@@ -10,6 +10,7 @@ const App = () => {
 	const [ brewery, setBrewery ] = useState([]);
 	const [ city, setCity ] = useState('');
 	const [ name, setName ] = useState('');
+	console.log('parents', brewery);
 	return (
 		<Router>
 			<NavBar />
@@ -33,7 +34,7 @@ const App = () => {
 			/>
 			<Route
 				exact
-				path="/maps"
+				path="/maps/:id"
 				render={(props) => {
 					return <Maps {...props} brewery={brewery} />;
 				}}
