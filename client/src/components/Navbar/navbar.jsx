@@ -5,9 +5,7 @@ import "../Navbar/navbar.css"
 const TopNav = () => {
   return (
     <nav className="navigation">
-    <Nav
-      defaultActiveKey="/home"
-      as="ul">
+    <Nav defaultActiveKey="/home" as="ul">
 
       <Nav.Item as="li">
         <Nav.Link href="/home">
@@ -23,7 +21,7 @@ const TopNav = () => {
 
       <Nav.Item as="li">
         <Nav.Link
-          href="/feature-brewery"
+          href="/feature"
           eventKey="link-2">
           Feature Brewery
         </Nav.Link>
