@@ -1,11 +1,10 @@
-/* JUST FOR DEMO PURPORSES, REPLACE WITH YOUR OWN CODE */
-
-#demo {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.home {
+	background-color: #a39372;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
 }
 
-/* END DEMO */
+#welcome {
+	font-size: 4rem;
+}
