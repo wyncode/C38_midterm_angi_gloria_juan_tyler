@@ -6,6 +6,7 @@ import NavBar from './components/Navbar/navbar';
 import './App.css';
 import Footer from './components/Footer/Footer.jsx';
 import About from './components/About/About';
+import Feature from './components/Feature/Feature'
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
       <Route path="/home" exact component={Home} />
       <Route path="/breweries" component={Breweries} />
       <Route path="/about" component={About} />
+      <Route path="/feature" component={Feature} />
+      
       <Footer />
     </Router>
     
