@@ -1,32 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { AppContextProvider } from './context/AppContext';
-import ContextDemo from './components/ContextDemo';
-import Modal from './components/Modal';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import Modal from './components/Modal';
 import './App.css';
 import Footer from './components/Footer/Footer.jsx';
 import About from './components/About/About';
 import Feature from './components/Feature/Feature'
+import NavBar from './components/Navbar/navbar';
+import Home from './components/Home/Home';
+import Breweries from './components/Brewery/Breweries';
 
 const App = () => {
-  const [serverMessage, setServerMessage] = useState('');
-  const [isOpen, setIsOpen] = useState(false);
 
-  const fetchDemoData = () => {
-    fetch('/api/demo')
-      .then((response) => response.json())
-      .then((data) => setServerMessage(data.message));
-  };
-
-  useEffect(fetchDemoData, []);
-
-  const handleClick = () => {
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-  };
 
   return (
     <Router>
