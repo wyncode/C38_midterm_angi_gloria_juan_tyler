@@ -6,12 +6,28 @@ h1 {
 }
 
 .container {
+  width: inherit;
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .teamCards {
+  /* border: 5px solid red; */
+  width: 15rem;
   color: black;
+  margin: 30px 45px;
 }
+.Allteamcards {
+  display: flex;
+  width: 90rem;
+  /* flex-wrap: wrap; */
+  /* align-self: center; */
+  justify-content: center;
+}
+
+/* .teamCards img {
+  width: 300px;
+  height: auto;
+} */
