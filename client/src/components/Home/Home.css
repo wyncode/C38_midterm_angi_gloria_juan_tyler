@@ -23,6 +23,7 @@ body {
   }
 
   h1 {
+    font-weight: bolder;
       text-transform: uppercase;
       font-size: 2rem;
       padding: 1rem 0;
@@ -55,3 +56,8 @@ body {
       align-items: center;
   }
 
+p {
+  font-family: Arial
+  Verdana, White, sans-serif;
+}
+ 
