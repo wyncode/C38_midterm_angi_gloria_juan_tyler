@@ -17,17 +17,22 @@
   animation: fadeIn 0.4s;
 }
 
+.modal-wrapper h1 {
+  color: black;
+}
+
 .modal-wrapper {
-  background: #fff;
+  background: gold;
   box-shadow: 0 2px 4px 0 rgba(55, 71, 79, 0.3);
   border-radius: 4px;
   z-index: 1000;
   padding: 25px;
-  width: 488px;
-  height: fit-content;
+  width: 40rem;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 10%;
   animation: fadeIn 0.5s ease, slideIn 0.5s ease forwards;
 }
@@ -48,4 +53,28 @@
   to {
     transform: translateY(0%);
   }
+}
+
+.options button {
+  background-color: gold;
+  border: 2px solid black;
+  color: black;
+  width: 5rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.options button:hover {
+  background: black;
+  border: 2px solid gold;
+  color: gold;
+  text-decoration: none;
+}
+
+.options button a {
+  color: black;
+}
+
+.options button a:hover {
+  color: gold;
 }

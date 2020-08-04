@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Prompt, Route } from 'react-router-dom';
+import './App.css';
+import Footer from './components/Footer/Footer.jsx';
+import About from './components/About/About';
+import Feature from './components/Feature/Feature';
+import NavBar from './components/Navbar/navbar';
+import Home from './components/Home/Home';
 import Breweries from './components/Brewery/Breweries';
 import Home from './components/Home/Home';
 import NavBar from './components/Navbar/Navbar';
@@ -8,6 +14,7 @@ import './App.css';
 import AgeCheck from './components/Modal/Modal';
 
 const App = () => {
+
 	const [ brewery, setBrewery ] = useState([]);
 	const [ city, setCity ] = useState('');
 	const [ name, setName ] = useState('');
@@ -41,6 +48,9 @@ const App = () => {
 					return <Maps {...props} brewery={brewery} />;
 				}}
 			/>
+    <Route path="/about" component={About} />
+      <Route path="/feature" component={Feature} />
+      <Footer />
 		</Router>
 	);
 };
