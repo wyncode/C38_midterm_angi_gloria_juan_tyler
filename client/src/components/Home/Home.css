@@ -87,4 +87,18 @@ body {
       flex-direction: column;
       align-items: center;
   }
+  .Our{
+    font-family: 'Alegreya', serif;
+    font-size: 50px;
+    color: yellow;
+    text-align: center;
+    
+  }
+  
 
+p {
+  font-family: 'Alegreya', serif;
+  font-weight: 550;
+  font-size: large;
+  justify-self: center;
+}
