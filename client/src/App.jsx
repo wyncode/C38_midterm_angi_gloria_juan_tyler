@@ -1,5 +1,5 @@
-import React from 'react';
-// import React, { useState, useEffect } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import Modal from './components/Modal';
 import './App.css';
@@ -9,18 +9,9 @@ import Feature from './components/Feature/Feature';
 import NavBar from './components/Navbar/navbar';
 import Home from './components/Home/Home';
 import Breweries from './components/Brewery/Breweries';
-// import { Link } from 'react-router-dom';
 
 const App = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-
-  // const handleClick = () => {
-  //       setIsOpen(true);
-  //     };
-    
-  //     const closeModal = () => {
-  //       setIsOpen(false);
-  //     };
+  
 
 
   return (
@@ -45,5 +36,4 @@ const App = () => {
 };
 
 export default App;
-
 
