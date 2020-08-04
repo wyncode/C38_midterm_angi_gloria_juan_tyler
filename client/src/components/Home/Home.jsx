@@ -3,7 +3,7 @@ import '../Home/Home.css'
 import Logo from './../../../src/Images/logo-color.png'
 // import { Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { Nav } from 'react-bootstrap';
+
 
 
 const Home = () => {
@@ -11,8 +11,8 @@ const Home = () => {
     <main>
       <div className="banner">
         <h5>Welcome to the Brewery Finder!</h5>
-        <h1>Immerse yourself into the refreshing lifestyle of brewery touring</h1>
-        <p className="button-placeholder"><Nav.Link href="/breweries" >Find Breweries Now</Nav.Link></p>
+        <h1>Immerse yourself into the refreshing</h1> <h1>lifestyle of brewery touring</h1>
+        <Link className="button-placeholder" to={'/breweries'}>Find Breweries Now</Link>
       </div>
       <div className="container">
         <img className="logo-icon" src={Logo} alt="Brewery Finder Logo" />
