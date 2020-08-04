@@ -7,7 +7,7 @@ const Footer = () => {
     return (
 <footer className="footer">
             <h3>JOIN OUR MAILING LIST</h3>
-            <p>Need exciting copy to put here, so people will subscribe if they feel inclined to!</p>
+            <p>A perfectly brewed life for you? We second that! Subscribe below and grab your future by the mug.</p>
         <Form className="footer-form">
 
             <div className="inputs">
