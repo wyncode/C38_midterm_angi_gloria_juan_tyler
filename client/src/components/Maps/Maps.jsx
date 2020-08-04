@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import GoogleMapReact from 'google-map-react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import { useParams } from 'react-router-dom';
 
