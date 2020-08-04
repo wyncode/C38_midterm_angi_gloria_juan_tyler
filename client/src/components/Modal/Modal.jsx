@@ -17,6 +17,7 @@ const AgeCheck = (props) => {
 			aria-labelledby="contained-modal-title-vcenter"
 			centered
 			show={show}
+			backdrop="static"
 			onHide={handleClose}
 		>
 			<Modal.Header style={{ backgroundColor: '#FAD700' }}>
