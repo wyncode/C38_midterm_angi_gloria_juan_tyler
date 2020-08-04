@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Prompt, Route } from 'react-router-dom';
 import Breweries from './components/Brewery/Breweries';
 import Home from './components/Home/Home';
 import NavBar from './components/Navbar/Navbar';
 import Maps from './components/Maps/Maps';
 import './App.css';
+import AgeCheck from './components/Prompt/Prompt';
 
 const App = () => {
 	const [ brewery, setBrewery ] = useState([]);
@@ -13,6 +14,7 @@ const App = () => {
 	console.log('parents', brewery);
 	return (
 		<Router>
+			<AgeCheck />
 			<NavBar />
 			<Route path="/" exact component={Home} />
 			<Route

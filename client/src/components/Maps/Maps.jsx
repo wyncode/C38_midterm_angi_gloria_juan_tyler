@@ -42,28 +42,3 @@ const Maps = (props) => {
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyDLZzFeYmkubzhapzVlvm-og7lAAA4WdQs'
 })(Maps);
-
-// const LocationPin = ({ text }) => (
-// 	<div className="pin">
-// 		<FontAwesomeIcon icon={faMapMarker} className="pin-icon" />
-// 		<p className="pin-text">{text}</p>
-// 	</div>
-// );
-
-// const Maps = ({ location, zoomLevel }) => (
-// 	<div className="map">
-// 		<h2 className="map-h2">Come Visit Our Brewery</h2>
-
-// 		<div className="google-map">
-// 			<GoogleMapReact
-// 				bootstrapURLKeys={{ key: 'AIzaSyDLZzFeYmkubzhapzVlvm-og7lAAA4WdQs' }}
-// 				defaultCenter={location}
-// 				defaultZoom={zoomLevel}
-// 			>
-// 				<LocationPin lat={location.lat} lng={location.lng} text={location.address} />
-// 			</GoogleMapReact>
-// 		</div>
-// 	</div>
-// );
-
-// export default Maps;
