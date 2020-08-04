@@ -1,16 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {Modal, Button}  from 'react-bootstrap';
 
 
-function AgeCheck() {
+
+const AgeCheck = () => {
 	const [show, setShow] = useState(false);
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
 	return (
 	  <>
-		<Button variant="primary" onClick={handleShow}>
-		  Launch demo modal
-		</Button>
-		<Modal show={show} onHide={handleClose}>
+		<Modal show={show}  onLoad={handleShow}>
 		  <Modal.Header closeButton>
 			<Modal.Title>Modal heading</Modal.Title>
 		  </Modal.Header>
