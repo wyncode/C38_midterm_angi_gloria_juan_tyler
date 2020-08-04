@@ -4,14 +4,12 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer.jsx';
 import About from './components/About/About';
-import Feature from './components/Feature/Feature'
+import Feature from './components/Feature/Feature';
 import NavBar from './components/Navbar/navbar';
 import Home from './components/Home/Home';
 import Breweries from './components/Brewery/Breweries';
 
 const App = () => {
-
-
   return (
     <Router>
       <NavBar />
@@ -21,12 +19,10 @@ const App = () => {
       <Route path="/feature" component={Feature} />
       <Footer />
     </Router>
-    
   );
 };
 
 export default App;
-
 
 // import React, { useState, useEffect } from 'react';
 // import { AppContextProvider } from './context/AppContext';
