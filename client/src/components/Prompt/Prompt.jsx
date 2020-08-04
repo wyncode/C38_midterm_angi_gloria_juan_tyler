@@ -1,20 +1,31 @@
 import React from 'react';
-import { Prompt } from 'react-router-dom';
 
-const AgeCheck = () => {
+
+function AgeCheck() {
+	const [show, setShow] = useState(false);
+	const handleClose = () => setShow(false);
+	const handleShow = () => setShow(true);
 	return (
-		<Prompt
-			message={(location, action) => {
-				if (action === 'POP') {
-					console.log('Backing up...');
-				}
-
-				return location.pathname.startsWith('/breweries')
-					? true
-					: `Are you sure you want to go to ${location.pathname}?`;
-			}}
-		/>
+	  <>
+		<Button variant="primary" onClick={handleShow}>
+		  Launch demo modal
+		</Button>
+		<Modal show={show} onHide={handleClose}>
+		  <Modal.Header closeButton>
+			<Modal.Title>Modal heading</Modal.Title>
+		  </Modal.Header>
+		  <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+		  <Modal.Footer>
+			<Button variant="secondary" onClick={handleClose}>
+			  Close
+			</Button>
+			<Button variant="primary" onClick={handleClose}>
+			  Save Changes
+			</Button>
+		  </Modal.Footer>
+		</Modal>
+	  </>
 	);
-};
+  }
 
 export default AgeCheck;
