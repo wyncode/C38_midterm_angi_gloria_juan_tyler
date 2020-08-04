@@ -1,13 +1,15 @@
 import React from 'react';
-import '../Home/Home.css'
+import '../Home/Home.css';
+import Nav from 'react-bootstrap/Nav';
 
 const Home = () => {
   return (
     <main>
+      
       <div className="banner">
-        <h5>Welcome to the Brewery Finder!</h5>
+        <h5 id="1">Welcome to the Brewery Finder!</h5>
         <h1>Immerse yourself into the refreshing lifestyle of brewery touring</h1>
-        <p className="button-placeholder">Find Breweries Now</p>
+        <p className="button-placeholder"><Nav.Link href="/breweries">Find Breweries Now</Nav.Link></p>
       </div>
       <div className="container">
         {/* <img src="client/public/logo-color.png" alt="Brewery Finder Logo"></img> */}

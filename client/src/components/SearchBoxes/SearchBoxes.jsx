@@ -5,7 +5,7 @@ export const SearchBox = (props) => (
   <>
     <form onSubmit={props.fetchByName}>
       <input
-        className="search"
+        className="searchName"
         type="search"
         placeholder="search by name"
         onChange={props.handleNameChange}
@@ -14,7 +14,7 @@ export const SearchBox = (props) => (
     </form>
     <form onSubmit={props.fetchByCity}>
       <input
-        className="search"
+        className="searchCity"
         type="search"
         placeholder="search by city"
         onChange={props.handleCityChange}
