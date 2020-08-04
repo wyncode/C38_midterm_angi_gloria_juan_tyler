@@ -1,7 +1,5 @@
-
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import Modal from './components/Modal';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Prompt, Route } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer.jsx';
 import About from './components/About/About';
@@ -9,31 +7,52 @@ import Feature from './components/Feature/Feature';
 import NavBar from './components/Navbar/navbar';
 import Home from './components/Home/Home';
 import Breweries from './components/Brewery/Breweries';
+import Home from './components/Home/Home';
+import NavBar from './components/Navbar/Navbar';
+import Maps from './components/Maps/Maps';
+import './App.css';
+import AgeCheck from './components/Modal/Modal';
 
 const App = () => {
-  
 
-
-  return (
-    <Router>
-      <NavBar />
-      <Route path="/" exact component={Home} />
-      <Route path="/breweries" component={Breweries} />
-      <Route path="/about" component={About} />
+	const [ brewery, setBrewery ] = useState([]);
+	const [ city, setCity ] = useState('');
+	const [ name, setName ] = useState('');
+	console.log('parents', brewery);
+	return (
+		<Router>
+			<AgeCheck />
+			<NavBar />
+			<Route path="/" exact component={Home} />
+			<Route
+				exact
+				path="/breweries"
+				render={(props) => {
+					return (
+						<Breweries
+							{...props}
+							brewery={brewery}
+							city={city}
+							name={name}
+							setBrewery={setBrewery}
+							setCity={setCity}
+							setName={setName}
+						/>
+					);
+				}}
+			/>
+			<Route
+				exact
+				path="/maps/:id"
+				render={(props) => {
+					return <Maps {...props} brewery={brewery} />;
+				}}
+			/>
+    <Route path="/about" component={About} />
       <Route path="/feature" component={Feature} />
-      {/* <button onClick={handleClick}>Show modal</button> */}
-      {/* <Modal isOpen={isOpen} closeModal={closeModal}>
-         <h1>Are you over 21?</h1>
-         <div className="options">
-            <button onClick={closeModal}><Link to={`/`}>Yes</Link></button>
-            <button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">No</a></button>
-         </div>
-       </Modal> */}
       <Footer />
-      
-    </Router>
-  );
+		</Router>
+	);
 };
 
 export default App;
-

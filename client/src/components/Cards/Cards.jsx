@@ -1,9 +1,10 @@
 import React from 'react';
-
 import './Cards.css';
+import { Link } from 'react-router-dom';
 
-export const Cards = (props) => (
+const Cards = (props) => (
 	<div className="card-container">
+		<img src={props.pic} alt="breweries" />
 		<h2> {props.brewery.name} </h2>
 		<p> City: {props.brewery.city} </p>
 		<p> State: {props.brewery.state} </p>
@@ -12,5 +13,8 @@ export const Cards = (props) => (
 			{' '}
 			Visit Website{' '}
 		</a>
+		<Link to={`/maps/${props.brewery.id}`}>Google Maps </Link>
 	</div>
 );
+
+export default Cards;
