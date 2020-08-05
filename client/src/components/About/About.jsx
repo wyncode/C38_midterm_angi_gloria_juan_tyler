@@ -5,31 +5,45 @@ import Logo from './../../../src/Images/logo-color.png';
 import angi from './ImagesPhotos/ANGI.jpg';
 import juan from './ImagesPhotos/Juan.jpg';
 import gloria from './ImagesPhotos/gloriaBeer.jpg';
+import ty from './ImagesPhotos/image0.jpeg';
 
 const About = () => {
+return (
+    <main className="container">
+      <img className="logo-icon" src={Logo} alt="Brewery Finder Logo" />
+      <h1>The Team</h1>
+      <p>
+        Industrious and in the pursuit of transformative tech, the Team knows
+        very well how important taking breaks is to achieving success! Here are
+        the members who bring you the exhilerating component of Brewery Finder!
+      </p>
 
-    return (
-        <main className="container">
-            <img className="logo-icon"
-                src={Logo}
-                alt="Brewery Finder Logo"/>
-            <h1>The Team</h1>
-            <p>
-                The miller light beyond an Ellis Island IPA throws some Amarillo Pale
-                        Ale at an Imperial Stout around an air hocky table, or a change for a
-                        bar tab trades baseball cards with the Amarillo Pale Ale inside a beer.
-            </p>
-            <div className="Allteamcards">
-                <TeamMember name="Angi 'Swift Phalanges'" body="Enjoys long coding days with Corona and lime in hand"
-                    img={angi}/>
-                <TeamMember name="Juan the Nodemon" body="Loves a tall glass of La Rubia with his code"
-                    img={juan}/>
-                <TeamMember name="Gloria Tells a Storia" body="Likes to be not only a 'Modelo' drinker, but coder"
-                    img={gloria}/>
-                <TeamMember name="My name 2" body="Description of person 2 here" img="Hello1"/>
-            </div>
-        </main>
-    );
+      <div className="Allteamcards">
+        <TeamMember
+          name="Angi 'Swift Phalanges'"
+          body="Enjoys long coding days with Lulo Sour in hand."
+          img={angi}
+        />
+
+        <TeamMember
+          name="Juan the Nodemon"
+          body="Prefers blondes, so La Rubia is by his coding side."
+          img={juan}
+        />
+        <TeamMember
+          name="Gloria Tells a Storia"
+          body="Likes to be not only a 'Modelo' drinker, but modelo coder too."
+          img={gloria}
+        />
+        <TeamMember
+          name="Ty the Full Stack Guy"
+          body="Heine-win! Takes big sips of the latest and greatest in the tech world."
+          img={ty}
+        />
+      </div>
+    </main>
+  );
+
 };
 
 export default About;

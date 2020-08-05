@@ -1,3 +1,6 @@
+/* import React {} from 'react';
+import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from 'mdbreact';
+import angi from './ImagesPhotos/ANGI.jpg'; */
 h1 {
   text-transform: uppercase;
   font-size: 2rem;
@@ -5,19 +8,19 @@ h1 {
   color: gold;
 }
 
-.container {
+/* .container {
   width: inherit;
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
+} */
 
 .teamCards {
   /* border: 5px solid red; */
   width: 15rem;
   color: black;
-  margin: 30px 45px;
+  margin: 50px 45px;
 }
 .Allteamcards {
   display: flex;
@@ -27,6 +30,21 @@ h1 {
   justify-content: center;
 }
 
+.card-img-top {
+  transition: transform 0.3s; /*/Animation /*/
+
+  height: 185px;
+}
+
+.card-img-top:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.card-img-top {
+  height: 20rem;
+}
 /* .teamCards img {
   width: 300px;
   height: auto;
