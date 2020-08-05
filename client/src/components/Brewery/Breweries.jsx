@@ -2,13 +2,15 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import { CardList } from '../BreweriesCard/CardList';
 import { SearchBox } from '../SearchBoxes/SearchBoxes';
+import './Breweries.css';
 
-
-const Breweries = ({city, name, brewery, setCity, setName, setBrewery}) => {
+const Breweries = ({ city, name, brewery, setCity, setName, setBrewery }) => {
   useEffect(() => {
-    axios.get('https://api.openbrewerydb.org/breweries?per_page=12').then((response) => {
-      setBrewery(response.data);
-    });
+    axios
+      .get('https://api.openbrewerydb.org/breweries?per_page=12')
+      .then((response) => {
+        setBrewery(response.data);
+      });
   }, []);
 
   const handleNameChange = (event) => {
@@ -36,7 +38,7 @@ const Breweries = ({city, name, brewery, setCity, setName, setBrewery}) => {
   };
 
   return (
-    <>
+    <div className="container-breweries">
       <h1>Brewery Finder</h1>
       <SearchBox
         fetchByName={fetchByName}
@@ -45,7 +47,7 @@ const Breweries = ({city, name, brewery, setCity, setName, setBrewery}) => {
         handleCityChange={handleCityChange}
       />
       <CardList breweries={brewery} />
-    </>
+    </div>
   );
 };
 

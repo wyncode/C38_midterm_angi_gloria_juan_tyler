@@ -1,15 +1,26 @@
 #cardbody {
-  color: rgb(43, 43, 43);
+	color: rgb(43, 43, 43);
 }
 
 #websitebutton {
-  display: flex;
-  justify-content: center;
-  width: 150px;
-  margin: auto;
+	display: flex;
+	justify-content: center;
+	width: 150px;
+	margin: auto;
 }
 .btn-primary {
-  color: rgb(27, 25, 25);
-  background-color: #e0d531;
-  border-color: #f059a4;
+	color: rgb(27, 25, 25);
+	background-color: #e0d531;
 }
+#websitebutton {
+	text-decoration: none;
+	background-color: gold;
+	border: 2px solid white;
+}
+
+#websitebutton:hover {
+	/* text-decoration: none; */
+	background-color: black;
+}
+/* .btn hover {
+} */
