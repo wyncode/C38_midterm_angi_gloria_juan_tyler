@@ -1,49 +1,28 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import "../Navbar/navbar.css"
+import '../Navbar/navbar.css';
+import { Link } from 'react-router-dom';
 
 const TopNav = () => {
   return (
     <nav className="navigation">
+      <Nav defaultActiveKey="/" as="ul">
+        <Nav.Item as="li">
+          <Link to="/">Home</Link>
+        </Nav.Item>
 
-    <Nav defaultActiveKey="/" as="ul">
+        <Nav.Item as="li">
+          <Link to="/breweries">Brewery Finder</Link>
+        </Nav.Item>
 
-      <Nav.Item as="li">
-        <Nav.Link href="/">
-          Home
-        </Nav.Link>
-      </Nav.Item>
+        <Nav.Item as="li">
+          <Link to="/feature">Feature Brewery</Link>
+        </Nav.Item>
 
-      <Nav.Item as="li">
-        <Nav.Link href="/breweries">
-          Brewery Finder
-        </Nav.Link>
-      </Nav.Item>
-
-      <Nav.Item as="li">
-        <Nav.Link
-          href="/feature"
-          eventKey="link-2">
-          Feature Brewery
-        </Nav.Link>
-      </Nav.Item>
-      
-      {/* <Nav.Item as="li">
-        <Nav.Link
-          style={{ color: 'yellow' }}
-          href="/recipe/random"
-          eventKey="link-2">
-          Our Breweries
-        </Nav.Link>
-      </Nav.Item> */}
-
-      <Nav.Item as="li">
-        <Nav.Link href="/about" eventKey="link-1">
-          About Us
-        </Nav.Link>
-      </Nav.Item>
-      
-    </Nav>
+        <Nav.Item as="li">
+          <Link to="/about">About Us</Link>
+        </Nav.Item>
+      </Nav>
     </nav>
   );
 };
