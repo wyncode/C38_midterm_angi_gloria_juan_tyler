@@ -46,7 +46,7 @@ const App = () => {
 					return <Maps {...props} brewery={brewery} />;
 				}}
 			/>
-    <Route path="/about" component={About} />
+      <Route path="/about" component={About} />
       <Route path="/feature" component={Feature} />
       <Footer />
 		</Router>
