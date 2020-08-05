@@ -5,7 +5,6 @@ import Home from './components/Home/Home';
 import NavBar from './components/Navbar/Navbar';
 import Maps from './components/Maps/Maps';
 import './App.css';
-import AgeCheck from './components/Modal/Modal';
 
 const App = () => {
 	const [ brewery, setBrewery ] = useState([]);
@@ -14,7 +13,6 @@ const App = () => {
 	console.log('parents', brewery);
 	return (
 		<Router>
-			<AgeCheck />
 			<NavBar />
 			<Route path="/" exact component={Home} />
 			<Route
