@@ -38,12 +38,12 @@ const AgeCheck = (props) => {
           variant="danger"
           onClick={handleClose}
         >
-          <Link
-            className="no-button-link"
+          <a
+            style={{ color: 'white', textDecoration: 'none' }}
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           >
             No, I am not
-          </Link>
+          </a>
         </Button>
       </Modal.Footer>
     </Modal>

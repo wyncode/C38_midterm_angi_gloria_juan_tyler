@@ -89,11 +89,10 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-.Our {
+h1 {
   font-family: 'Alegreya', serif;
   font-size: 30px;
   color: gold;
-  text-align: center;
 }
 
 p {
