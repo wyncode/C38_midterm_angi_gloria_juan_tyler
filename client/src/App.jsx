@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Prompt, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Breweries from './components/Brewery/Breweries';
 import Home from './components/Home/Home';
 import NavBar from './components/Navbar/Navbar';
