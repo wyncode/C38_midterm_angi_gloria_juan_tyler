@@ -2,10 +2,10 @@
 import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import angi from './ImagesPhotos/ANGI.jpg'; */
 h1 {
-  text-transform: uppercase;
-  font-size: 2rem;
-  padding: 1rem 0;
-  color: gold;
+	text-transform: uppercase;
+	font-size: 2rem;
+	padding: 1rem 0;
+	color: gold;
 }
 
 /* .container {
@@ -17,33 +17,31 @@ h1 {
 } */
 
 .teamCards {
-  /* border: 5px solid red; */
-  width: 15rem;
-  color: black;
-  margin: 50px 45px;
+	/* border: 5px solid red; */
+	width: 15rem;
+	color: black;
+	margin: 50px 45px;
 }
 .Allteamcards {
-  display: flex;
-  width: 90rem;
-  /* flex-wrap: wrap; */
-  /* align-self: center; */
-  justify-content: center;
+	display: flex;
+	width: 90rem;
+	/* flex-wrap: wrap; */
+	/* align-self: center; */
+	justify-content: center;
 }
 
-.card-img-top {
-  transition: transform 0.3s; /*/Animation /*/
+.Ourimages {
+	transition: transform 0.3s; /*/Animation /*/
 
-  height: 185px;
+	height: 185px;
 }
 
-.card-img-top:hover {
-  transform: scale(
-    1.1
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.Ourimages:hover {
+	transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-.card-img-top {
-  height: 20rem;
+.Ourimages {
+	height: 20rem;
 }
 /* .teamCards img {
   width: 300px;
@@ -51,6 +49,6 @@ h1 {
 } */
 
 .logo-icon {
-  width: 3rem;
-  height: auto;
+	width: 3rem;
+	height: auto;
 }
