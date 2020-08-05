@@ -3,12 +3,14 @@ import '../Home/Home.css'
 import Logo from './../../../src/Images/logo-color.png'
 // import { Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import AgeCheck from '../Modal/Modal';
 
 
 
 const Home = () => {
   return (
     <main>
+      <AgeCheck />
       <div className="banner">
         <h5>Welcome to the Brewery Finder!</h5>
         <h1>Immerse yourself into the refreshing</h1> <h1>lifestyle of brewery touring</h1>

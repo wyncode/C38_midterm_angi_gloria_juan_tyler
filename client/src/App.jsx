@@ -9,7 +9,7 @@ import Home from './components/Home/Home';
 import Breweries from './components/Brewery/Breweries';
 import Maps from './components/Maps/Maps';
 import './App.css';
-import AgeCheck from './components/Modal/Modal';
+
 
 const App = () => {
 
@@ -19,7 +19,7 @@ const App = () => {
 	console.log('parents', brewery);
 	return (
 		<Router>
-			<AgeCheck />
+			
 			<NavBar />
 			<Route path="/" exact component={Home} />
 			<Route
