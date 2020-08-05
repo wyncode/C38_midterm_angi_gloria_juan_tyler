@@ -22,9 +22,9 @@ const About = () => {
     <main className="container">
       <h1>The Team</h1>
       <p>
-        The miller light beyond an Ellis Island IPA throws some Amarillo Pale
-        Ale at an Imperial Stout around an air hocky table, or a change for a
-        bar tab trades baseball cards with the Amarillo Pale Ale inside a beer.
+        Industrious and in the pursuit of transformative tech, the Team knows
+        very well how important taking breaks is to achieving success! Here are
+        the members who bring you
       </p>
       <div className="Allteamcards">
         <TeamMember

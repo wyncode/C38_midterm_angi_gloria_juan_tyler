@@ -38,7 +38,7 @@ const Feature = () => {
           </Button>
         </Card.Body>
       </Card>
-      <Form>
+      {/* <Form>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Subscribe!</Form.Label>
           <Form.Control
@@ -53,7 +53,7 @@ const Feature = () => {
         <Button onClick={subscribed} variant="primary" type="submit">
           Submit
         </Button>
-      </Form>
+      </Form> */}
     </div>
   );
 };

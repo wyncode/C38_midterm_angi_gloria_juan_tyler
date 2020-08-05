@@ -11,5 +11,7 @@
 .btn-primary {
   color: rgb(27, 25, 25);
   background-color: #e0d531;
-  border-color: #f059a4;
+}
+
+.btn hover {
 }
