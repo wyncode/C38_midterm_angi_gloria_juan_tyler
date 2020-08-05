@@ -1,0 +1,38 @@
+.modal-popup {
+  background-image: url('https://images.unsplash.com/photo-1589711428920-bf084b80e0bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-content {
+  background-color: #151515;
+  border: 2px solid white;
+}
+
+.modal-button-yes {
+  background-color: gold;
+  color: black;
+  border: 2px solid black;
+}
+
+.modal-button-yes:hover {
+  border: 2px solid white;
+}
+
+.modal-button-no {
+  border: 2px solid black;
+}
+
+.modal-button-no:hover {
+  border: 2px solid white;
+}
+
+.no-button-link {
+  color: white;
+}
+
+.no-button-link:hover {
+  color: white;
+  text-decoration: none;
+  color: white;
+}
