@@ -3,23 +3,23 @@ import './SearchBoxes.css';
 
 export const SearchBox = (props) => (
   <>
-    <form onSubmit={props.fetchByName}>
+    <form onChange={props.fetchByName}>
       <input
         className="search"
         type="search"
         placeholder="search by name"
         onChange={props.handleNameChange}
       />
-      <input type="submit" value="search by name" />
+      {/* <input type="submit" value="search by name" /> */}
     </form>
-    <form onSubmit={props.fetchByCity}>
+    <form onChange={props.fetchByCity}>
       <input
         className="search"
         type="search"
         placeholder="search by city"
         onChange={props.handleCityChange}
       />
-      <input type="submit" value="search by city" />
+      {/* <input type="submit" value="search by city" /> */}
     </form>
   </>
 );

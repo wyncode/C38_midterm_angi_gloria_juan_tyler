@@ -1,26 +1,14 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
 import TeamMember from './TeamMember';
 import '../About/About.css';
-import Logo from './../../../src/Images/logo-color.png'
+import Logo from './../../../src/Images/logo-color.png';
 import angi from './ImagesPhotos/ANGI.jpg';
 import juan from './ImagesPhotos/Juan.jpg';
 import gloria from './ImagesPhotos/gloriaBeer.jpg';
 import ty from './ImagesPhotos/image0.jpeg';
 
 const About = () => {
-  //   const TeamMember = (props) => {
-  //     return (
-  //       <Card style={{ width: '45rem' }}>
-  //         <Card.Img variant="top" src="" />
-  //         <Card.Body id="aboutbody">
-  //           <Card.Title>{props.name}</Card.Title>
-  //           <Card.Text>{props.body}</Card.Text>
-  //         </Card.Body>
-  //       </Card>
-  //     );
-  //   };
-  return (
+return (
     <main className="container">
       <img className="logo-icon" src={Logo} alt="Brewery Finder Logo" />
       <h1>The Team</h1>
@@ -55,6 +43,7 @@ const About = () => {
       </div>
     </main>
   );
+
 };
 
 export default About;

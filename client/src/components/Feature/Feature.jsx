@@ -30,27 +30,12 @@ const Feature = () => {
 						popular crafts like La Rubia and Laces IPA, so go grab your fill.
 					</Card.Text>
 
+
 					<Button id="websitebutton" variant="primary" href="https://wynwoodbrewing.com/" target="_blank">
 						Website
 					</Button>
 				</Card.Body>
 			</Card>
-			{/* <Form>
-        <Form.Group controlId="formBasicEmail">
-          <Form.Label>Subscribe!</Form.Label>
-          <Form.Control
-            type="email"
-            placeholder="Enter email"
-            onChange={(event) => setEmail(event.target.value)}
-          />
-          <Form.Text className="text-muted">
-            Just for you! Receive updates on this awesome brewery's finest!
-          </Form.Text>
-        </Form.Group>
-        <Button onClick={subscribed} variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form> */}
 		</div>
 	);
 };
