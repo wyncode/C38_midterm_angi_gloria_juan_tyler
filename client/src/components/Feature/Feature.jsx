@@ -33,6 +33,8 @@ const Feature = () => {
             variant="primary"
             href="https://wynwoodbrewing.com/"
             target="_blank"
+            rel="noopener noreferrer"
+            i
           >
             Website
           </Button>

@@ -1,32 +1,31 @@
 import React from 'react';
 import '../Home/Home.css';
-import AgeCheck from '../Modal/Modal';
+import Logo from './../../../src/Images/logo-color.png';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	return (
 		<main>
-			<AgeCheck />
 			<div className="banner">
 				<h5>Welcome to the Brewery Finder!</h5>
-				<h1>Immerse yourself into the refreshing lifestyle of brewery touring</h1>
-				<p className="button-placeholder">Find Breweries Now</p>
+				<h1>Immerse yourself into the refreshing</h1> <h1>lifestyle of brewery touring</h1>
+				<Link className="button-placeholder" to={'/breweries'}>
+					Find Breweries Now
+				</Link>
 			</div>
 			<div className="container">
-				{/* <img src="client/public/logo-color.png" alt="Brewery Finder Logo"></img> */}
-				<h1>Our Story</h1>
+				<img className="logo-icon" src={Logo} alt="Brewery Finder Logo" />
+				<h1 className="Our">Our Story</h1>
 				<p>
-					The miller light beyond an Ellis Island IPA throws some Amarillo Pale Ale at an Imperial Stout
-					around an air hocky table, or a change for a bar tab trades baseball cards with the Amarillo Pale
-					Ale inside a beer. The mitochondrial monkey bite finds much coolness with a Dixie Beer defined by
-					some bud light.
+					Ever wonder where that tasty treat came from? what god created this miracle of beverage? The brewery
+					most be awesome and has to be ran by magicians and magic elves... Look no further! Take the journey
+					and become immersed in one of these most trend setting and innovative process of craft breweries.
+					In, 2019 alone over 8,000 breweries opened up their doors for the first time.{' '}
 				</p>
-				<p>
-					The Honey Brown, a blitzed Dixie Beer, and a black velvet about the Left Hand Milk Stout are what
-					made America great! A tattered milwakees best bestows great honor upon a colt 45.
-				</p>
-				<a href="#">
-					<div className="about-us-button">More About Us</div>
-				</a>
+				<p>So what are you waiting for? Find a craft brewery near you and Tap into a cold one today! </p>
+				<Link className="about-link" to={`/about`}>
+					More About Us
+				</Link>
 			</div>
 		</main>
 	);

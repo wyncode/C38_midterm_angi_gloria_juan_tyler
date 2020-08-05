@@ -1,104 +1,104 @@
 body {
-    background-color: #151515;
-    color: white;
-  }
-
-  a {
-      text-decoration: none;
-  }
-
-  a:visited {
-    text-decoration: none;
+  background-color: #151515;
+  color: white;
 }
 
-  .banner {
-    position: relative;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0 5rem;
-    justify-content: center;
-    background-image: url(https://images.unsplash.com/photo-1554127959-b04104f23bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80);
-    background-size: cover;
-    background-position: center;
-  }
-
-  .banner::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.5);
-  }
-
-  .logo-icon {
-    width: 3rem;
-    height: auto;
-  }
-
-  h5 {
-    position: relative;
-  }
-
-  h1 {
-      position: relative;
-      text-transform: uppercase;
-      font-size: 2rem;
-      padding: 1rem 0;
-      color: gold;
-  }
-
-  .button-placeholder {
-      position: relative;
-      background-color: gold;
-      padding: 10px;
-      color: black;
-      border: 2px solid black;
-      width: fit-content;
-      border-radius: .25rem;
-  }
-
-  .button-placeholder:hover {
-    position: relative;
-    background-color: black;
-    padding: 10px;
-    color: gold;
-    border: 2px solid gold;
-    width: fit-content;
-    border-radius: .25rem;
+a {
+  text-decoration: none;
 }
 
-  .about-link {
-    color: gold;
-    text-transform: uppercase;
-    margin-top: 1rem;
-  }
+a:visited {
+  text-decoration: none;
+}
 
-  .about-link:hover{
-    text-decoration: underline;
-    color: gold;
-  }
+.banner {
+  position: relative;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1554127959-b04104f23bab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80);
+  background-size: cover;
+  background-position: center;
+}
 
-  .container {
-      padding: 5rem 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-  .Our{
-    font-family: 'Alegreya', serif;
-    font-size: 50px;
-    color: yellow;
-    text-align: center;
-    
-  }
-  
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-icon {
+  width: 3rem;
+  height: auto;
+}
+
+h5 {
+  position: relative;
+}
+
+h1 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0rem 0;
+  color: gold;
+}
+
+.button-placeholder {
+  position: relative;
+  background-color: gold;
+  padding: 30px;
+  color: black;
+  border: 2px solid black;
+  width: fit-content;
+  border-radius: 0.25rem;
+}
+
+.button-placeholder:hover {
+  position: relative;
+  background-color: black;
+  padding: 30px;
+  color: gold;
+  border: 2px solid gold;
+  width: fit-content;
+  border-radius: 0.25rem;
+  font-style: black;
+  text-decoration: none;
+}
+
+.about-link {
+  color: gold;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.about-link:hover {
+  padding: 0em;
+  color: gold;
+}
+
+.container {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Our {
+  font-family: 'Alegreya', serif;
+  font-size: 30px;
+  color: gold;
+  text-align: center;
+}
 
 p {
-  font-family: 'Alegreya', serif;
-  font-weight: 550;
+  font-family: 'Alegreya', serif, 50px;
+  font-weight: 300;
   font-size: large;
   justify-self: center;
 }
