@@ -4,7 +4,7 @@ import './App.css';
 import Footer from './components/Footer/Footer.jsx';
 import About from './components/About/About';
 import Feature from './components/Feature/Feature';
-import NavBar from './components/Navbar/navbar';
+import NavBar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Breweries from './components/Brewery/Breweries';
 import Maps from './components/Maps/Maps';

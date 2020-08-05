@@ -1,7 +1,6 @@
 import React from 'react';
 import '../Home/Home.css';
 import Logo from './../../../src/Images/logo-color.png';
-// import { Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Home = () => {

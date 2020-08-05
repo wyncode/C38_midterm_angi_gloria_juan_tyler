@@ -8,6 +8,7 @@ Read the instructions thoroughly before starting your project.
 - `cd` into it.
 - `yarn install`
 - `cd client && yarn install`
+- `in client yarn add google-maps-react`
 
 ## Available build commands
 
@@ -20,8 +21,8 @@ Open [http://localhost:3000](http://localhost:3000) to view your local React app
 ## To deploy
 
 NOTE: Heroku specifically runs `npm start`, so don't remove that from your package.json file.
+This project is set to deploy automatically after the merging to master branch.
 
-- `heroku create your-app-name`
 - `git push heroku master`
 
 ## Project Requirements
