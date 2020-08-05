@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import './Modal.css';
-import { Link } from 'react-router-dom';
 
 const AgeCheck = (props) => {
   const [show, setShow] = useState(true);
