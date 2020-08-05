@@ -1,8 +1,7 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
 import TeamMember from './TeamMember';
 import '../About/About.css';
-import Logo from './../../../src/Images/logo-color.png'
+import Logo from './../../../src/Images/logo-color.png';
 import angi from './ImagesPhotos/ANGI.jpg';
 import juan from './ImagesPhotos/Juan.jpg';
 import gloria from './ImagesPhotos/gloriaBeer.jpg';
