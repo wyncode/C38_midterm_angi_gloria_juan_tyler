@@ -36,5 +36,5 @@ const Maps = (props) => {
 };
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyDLZzFeYmkubzhapzVlvm-og7lAAA4WdQs'
+  apiKey: process.env.REACT_APP_GOOGLEMAPS
 })(Maps);
