@@ -50,13 +50,7 @@ h1 {
   height: auto;
 } */
 
-/* class HoverPage extends React.Component {
-    render() {
-      return (
-        <MDBContainer>
-            <MDBView hover zoom>
-                <img src={angi} />
-            
-        
-            </MDBView>
-        </MDBContainer> */
+.logo-icon {
+  width: 3rem;
+  height: auto;
+}
