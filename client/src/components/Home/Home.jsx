@@ -8,15 +8,17 @@ const Home = () => {
     <main>
       <div className="banner">
         <h5>Welcome to the Brewery Finder!</h5>
-        <h1>Immerse yourself into the refreshing</h1>{' '}
-        <h1>lifestyle of brewery touring</h1>
-        <Link className="button-placeholder" to={'/breweries'}>
+        <h1>
+          Immerse yourself into the refreshing lifestyle of brewery touring
+        </h1>
+        <Link className="cta-button" to={'/breweries'}>
           Find Breweries Now
         </Link>
       </div>
       <div className="container">
         <img className="logo-icon" src={Logo} alt="Brewery Finder Logo" />
-        <h1 className="Our">Our Story</h1>
+        <h1>Our Story</h1>
+   
         <p>
           You've been wondering where that tasty wheaty treat in your glass
           comes from. What awesome party god created this miracle of a beverage?
