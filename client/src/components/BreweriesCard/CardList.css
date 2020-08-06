@@ -9,18 +9,12 @@
 }
 
 @media (max-width: 700px) {
-	* {
-		background-color: red;
-	}
 	.card-list {
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
 @media (min-width: 701px) and (max-width: 925px) {
-	* {
-		background-color: blue;
-	}
 	.card-list {
 		grid-template-columns: repeat(2, 1fr);
 	}
