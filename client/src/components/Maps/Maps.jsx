@@ -18,12 +18,11 @@ const Maps = (props) => {
       .then((response) => response.json())
       .then((data) => {
         setPub(data);
-        console.log(data);
       });
-  }, []);
+  }, [id]);
   console.log(pub.latitude, pub.longitude);
   return (
-    <div>
+    <div style={{ height: '100vh' }}>
       <Map
         google={props.google}
         zoom={15}
@@ -37,7 +36,5 @@ const Maps = (props) => {
 };
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyDLZzFeYmkubzhapzVlvm-og7lAAA4WdQs'
+  apiKey: process.env.REACT_APP_GOOGLEMAPS
 })(Maps);
-
-
