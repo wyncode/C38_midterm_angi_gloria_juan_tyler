@@ -7,6 +7,11 @@ Our mission is to support growing and established  Breweries help connect and sh
 - Open Brewery DB [https://www.openbrewerydb.org]
 - Google Maps [developers.google.com]
 
+## Brand Style Guide
+
+- Fonts - Alegreya
+- Colors - Black, Gold, White, #151515 
+
 ## Setup
 
 - `git clone` this repo
