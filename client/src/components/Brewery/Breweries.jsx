@@ -5,50 +5,44 @@ import { SearchBox } from '../SearchBoxes/SearchBoxes';
 import './Breweries.css';
 
 const Breweries = ({ city, name, brewery, setCity, setName, setBrewery }) => {
-  useEffect(() => {
-    axios
-      .get('https://api.openbrewerydb.org/breweries?per_page=12')
-      .then((response) => {
-        setBrewery(response.data);
-      });
-  }, []);
+	useEffect(() => {
+		axios.get('https://api.openbrewerydb.org/breweries?per_page=12').then((response) => {
+			setBrewery(response.data);
+		});
+	}, []);
 
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
+	const handleNameChange = (event) => {
+		setName(event.target.value);
+	};
 
-  const handleCityChange = (event) => {
-    setCity(event.target.value);
-  };
+	const handleCityChange = (event) => {
+		setCity(event.target.value);
+	};
 
-  const fetchByName = () => {
-    axios
-      .get(`https://api.openbrewerydb.org/breweries?by_name=${name}`)
-      .then((response) => {
-        setBrewery(response.data);
-      });
-  };
+	const fetchByName = () => {
+		axios.get(`https://api.openbrewerydb.org/breweries?by_name=${name}`).then((response) => {
+			setBrewery(response.data);
+		});
+	};
 
-  const fetchByCity = () => {
-    axios
-      .get(`https://api.openbrewerydb.org/breweries?by_city=${city}`)
-      .then((response) => {
-        setBrewery(response.data);
-      });
-  };
+	const fetchByCity = () => {
+		axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}`).then((response) => {
+			setBrewery(response.data);
+		});
+	};
 
-  return (
-    <div className="container-breweries">
-      <h1>Brewery Finder</h1>
-      <SearchBox
-        fetchByName={fetchByName}
-        fetchByCity={fetchByCity}
-        handleNameChange={handleNameChange}
-        handleCityChange={handleCityChange}
-      />
-      <CardList breweries={brewery} />
-    </div>
-  );
+	return (
+		<div className="container-breweries">
+			<h1 style={{ fontSize: '5rem', fontWeight: '700', textAlign: 'center' }}>Brewery Finder</h1>
+			<SearchBox
+				fetchByName={fetchByName}
+				fetchByCity={fetchByCity}
+				handleNameChange={handleNameChange}
+				handleCityChange={handleCityChange}
+			/>
+			<CardList breweries={brewery} />
+		</div>
+	);
 };
 
 export default Breweries;
