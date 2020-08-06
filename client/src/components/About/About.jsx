@@ -5,7 +5,7 @@ import Logo from './../../../src/Images/logo-color.png';
 import angi from './ImagesPhotos/ANGI.jpg';
 import juan from './ImagesPhotos/Juan.jpg';
 import gloria from './ImagesPhotos/gloriaBeer.jpg';
-import ty from './ImagesPhotos/image0.jpeg';
+import ty from './ImagesPhotos/ty.png';
 
 const About = () => {
   return (
