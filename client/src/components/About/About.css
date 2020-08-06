@@ -12,7 +12,7 @@ h1 {
 }
 .Allteamcards {
   display: flex;
-  /* width: 90rem; */
+  width: 85rem;
   justify-content: center;
   flex-wrap: wrap;
 }
