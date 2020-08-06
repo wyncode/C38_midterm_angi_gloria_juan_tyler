@@ -8,7 +8,7 @@ import gloria from './ImagesPhotos/gloriaBeer.jpg';
 import ty from './ImagesPhotos/image0.jpeg';
 
 const About = () => {
-return (
+  return (
     <main className="container">
       <img className="logo-icon" src={Logo} alt="Brewery Finder Logo" />
       <h1>The Team</h1>
@@ -30,6 +30,7 @@ return (
           body="Prefers blondes, so La Rubia is by his coding side."
           img={juan}
         />
+
         <TeamMember
           name="Gloria Tells a Storia"
           body="Likes to be not only a 'Modelo' drinker, but modelo coder too."
@@ -43,7 +44,6 @@ return (
       </div>
     </main>
   );
-
 };
 
 export default About;

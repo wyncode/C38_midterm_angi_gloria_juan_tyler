@@ -18,6 +18,7 @@ const Home = () => {
       <div className="container">
         <img className="logo-icon" src={Logo} alt="Brewery Finder Logo" />
         <h1>Our Story</h1>
+   
         <p>
           You've been wondering where that tasty wheaty treat in your glass
           comes from. What awesome party god created this miracle of a beverage?
@@ -30,10 +31,7 @@ const Home = () => {
           exploring to do - don't wait a minute more! Find a craft brewery near
           you and tap into a cold one today!{' '}
         </p>
-        <p>
-          So what are you waiting for? Find a craft brewery near you and Tap
-          into a cold one today!{' '}
-        </p>
+
         <Link className="about-link" to={`/about`}>
           More About Us
         </Link>
