@@ -19,7 +19,7 @@ const Home = () => {
         <h1 className="Our">Our Story</h1>
         <p>
           You've been wondering where that tasty wheaty treat in your glass
-          comes from. What awesome party god created this miracle of a beverage?
+          comes from. What awesome party God created this miracle of a beverage?
           The home brewery must be a mystical place run by magicians and
           elves... Now you can take the journey and see for yourself! Use
           Brewery Finder to travel to all your favorited breweries and become
