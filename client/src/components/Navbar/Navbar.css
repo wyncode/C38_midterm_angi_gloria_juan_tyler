@@ -1,24 +1,37 @@
 nav {
-  color: black;
-  background-color: gold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
+	color: black;
+	background-color: gold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 0;
+	width: 100vw;
 }
 
 nav a {
-  color: black;
-  text-transform: uppercase;
-  /* border: 2px solid red; */
-  margin: 0 10px;
-  font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+	margin: 0 10px;
 }
 
 nav a:hover {
-  color: gray;
+	color: black;
+	text-decoration: none;
 }
 
 nav a:active {
-  font-weight: bold;
+	font-weight: bold;
+}
+
+.navigation {
+	font-weight: 700;
+	font-size: 1.2rem;
+	width: 100%;
+}
+
+@media screen and (max-width: 360px) {
+	li {
+		width: 100% !important;
+		float: none !important;
+	}
 }

@@ -15,7 +15,6 @@ const App = () => {
 	const [ brewery, setBrewery ] = useState([]);
 	const [ city, setCity ] = useState('');
 	const [ name, setName ] = useState('');
-	console.log('parents', brewery);
 	return (
 		<Router>
 			<NavBar />
